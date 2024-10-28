@@ -1,0 +1,42 @@
+in package.json file
+--------------------
+{
+  "name": "nodejs-crash-2024",
+  "version": "1.0.0",
+  "description": "Node js crash course code",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js" // If we put start We can use npm start
+  },
+  "author": "Deepiks",
+  "license": "MIT"
+}
+
+Output
+------
+
+PS C:\New folder\node-course> npm start
+
+> nodejs-crash-2024@1.0.0 start
+> node server.js
+
+Server running on port 8000
+
+or else  We need to run like this
+
+PS C:\New folder\node-course> node server
+Server running on port 8000
+
+{
+  "name": "nodejs-crash-2024",
+  "version": "1.0.0",
+  "description": "Node js crash course code",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js" // If we put dev We can use npm run dev
+  },
+  "author": "Deepiks",
+  "license": "MIT"
+}

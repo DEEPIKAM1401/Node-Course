@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Nested Submenu</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS to handle submenu positioning */
+    .dropdown-menu-sub {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+      border-radius: 0.25rem;
+    }
+
+    .dropdown-menu-sub-sub {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+      border-radius: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-light shadow-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo2.png" class="logo img-fluid" alt="PSA Polycraft">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <!-- Other nav items -->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link click-scroll dropdown-toggle" href="#" id="navbarProductsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarProductsDropdown">
+            <li><a class="dropdown-item" href="products.html" style="background:#FF9F43; color:white; font-weight:400; border:1px solid white;">All Products</a></li>
+            <li><a class="dropdown-item" href="plasticscomp.html" style="background:#FF9F43; color:white; font-weight:400; border:1px solid white;">Plastic <br>Components</a></li>
+            <li><a class="dropdown-item" href="backlitecomp.html" style="background:#FF9F43; color:white; font-weight:400; border:1px solid white;">Bakelite <br>Components</a></li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="navbarRubberProductsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Rubber Products</a>
+              <ul class="dropdown-menu dropdown-menu-light dropdown-menu-sub" aria-labelledby="navbarRubberProductsDropdown">
+                <li><a class="dropdown-item" href="bellows.html">Bellows</a></li>
+                <li><a class="dropdown-item" href="orings.html">O Rings</a></li>
+                <li><a class="dropdown-item" href="diaphgram.html">Reinforced <br>Diaphragms</a></li>
+                <li><a class="dropdown-item dropdown-toggle" href="#" id="navbarRubberProductsSubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">More Rubber Products</a>
+                  <ul class="dropdown-menu dropdown-menu-sub-sub" aria-labelledby="navbarRubberProductsSubDropdown">
+                    <li><a class="dropdown-item" href="bushes.html">Rubber Bushes</a></li>
+                    <li><a class="dropdown-item" href="Rubbergasket.html">Rubber Gaskets</a></li>
+                    <li><a class="dropdown-item" href="Rubberseal.html">Rubber Seals</a></li>
+                    <li><a class="dropdown-item" href="metal.html">Metal Bonded <br>Seals</a></li>
+                    <li><a class="dropdown-item" href="valve.html">Valve Parts</a></li>
+                    <li><a class="dropdown-item" href="grommet.html">Grommets</a></li>
+                    <li><a class="dropdown-item" href="rubber.html">Rubber Pads</a></li>
+                    <li><a class="dropdown-item" href="washer.html">Washer</a></li>
+                    <li><a class="dropdown-item" href="nozzles.html">Nozzles</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- More products -->
+          </ul>
+        </li>
+
+        <!-- Other nav items -->
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
